@@ -507,70 +507,122 @@
             </div>
           </div>
       
-          <div class="modal fade" id="cart" data-bs-backdrop="static" tabindex="-1" aria-labelledby="cart" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-scrollable modal-lg">
-              <div class="modal-content">
-                <div class="modal-header p-4 pe-5 row">
-                    <div class="col text-start"><h4>SHOPPING CART</h4></div>
-                    <div class="col align-self-center text-start text-muted fs-6">0 ITEMS</div>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body p-0" style="overflow-x: hidden;">
-                  <div class="row">
-                    <div class="col-7 align-self-center text-muted fs-2" style="text-align: center;">NO ITEMS IN CART</div>
-      
-                    <div class="col-5 bg-dark p-5">
-                      <div class="row">
-                        <div class="col-6 text-light fs-5 align-self-center">SUMMARY</div>
-                        <div class="col-6 text-light align-self-center" style="text-align: right;">ITEMS: 0</div>
-                      </div>
-                        <form>
-                            <hr style="color: white;">
-                            <p class="text-light">SHIPPING</p>
-                              <select class="py-1 ps-3 rounded" style="width: 100%;">
-                                <option class="text-muted">Same-Day Shipping</option>
-                                <option class="text-muted">Regular Shipping</option>
-                              </select>
-                            <hr style="color: white;">
-                            <p class="text-light">COUPON CODE</p>
-                            <input class="py-1 ps-3 rounded" style="width: 100%;" placeholder="Enter Coupon Code">
-                        </form>
-                        <hr style="color: white;">
-                          <div class="row" style="border-top: 1px solid rgba(0,0,0,.1); padding: 2vh 0;">
-                              <div class="col text-light">TOTAL PRICE:</div>
-                              <div class="col text-light text-right">0.00 PHP</div>
-                          </div>
-                        <button class="btn btn-light">CHECKOUT</button>
-                    </div>
-                  </div>
-                </div>
-             </div>
-           </div>
+    <div class="modal fade" id="cart" data-bs-backdrop="static" tabindex="-1" aria-labelledby="cart" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-lg">
+        <div class="modal-content">
+          <div class="modal-header p-4 pe-5 row">
+              <div class="col text-start"><h4>SHOPPING CART</h4></div>
+              <div class="col align-self-center text-start text-muted fs-6">0 ITEMS</div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-      
-          <div class="modal fade" id="log" data-bs-backdrop="static" tabindex="-1" aria-labelledby="log" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-scrollable modal-m">
-              <div class="modal-content">
-                <div class="modal-header p-3">
-                  <p class="modal-title fs-5 fw-bold" id="staticBackdropLabel">Login/Register</p>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="modal-body p-0" style="overflow-x: hidden;">
+            <div class="row">
+              <div class="col-6 align-self-center text-muted fs-2" style="text-align: center;">NO ITEMS IN CART</div>
+
+              <div class="col-6 bg-dark py-5 pe-5 ps-4">
+                <div class="row">
+                  <div class="col text-light fs-5 align-self-center">SUMMARY</div>
+                  <div class="col text-light align-self-center">ITEMS: 0</div>
                 </div>
-                <div class="modal-body p-5" style="overflow-x: hidden;">
-                  <p style="text-align: center; font-weight: 700; font-size: 25px;">Login</p>
-                  <hr style="color: black;">
-                  <p>Username:</p>
-                  <input class="py-1 ps-3 rounded" style="width: 100%;" placeholder="Enter Username">
-                  <hr style="color: black;">
-                  <p>Password:</p>
-                  <input class="py-1 ps-3 rounded" style="width: 100%;" placeholder="Enter Password">
-                  <hr style="color: black;">
-                  <center><button class="btn btn-dark mb-3" style="width: 70%;">NEXT</button></center>
-                  <p class="account-prompt">Don't have an account?</p>
-                  <p class="account-prompt">Forgot Password</p>
-                </div>
+                  <form>
+                      <hr style="color: white;">
+                      <p class="text-light">SHIPPING</p>
+                        <select class="py-1 ps-3 rounded" style="width: 100%;">
+                          <option class="text-muted">Same-Day Shipping</option>
+                          <option class="text-muted">Regular Shipping</option>
+                        </select>
+                      <hr style="color: white;">
+                      <p class="text-light">COUPON CODE</p>
+                      <input type="text" class="py-1 ps-3 rounded" style="width: 100%;" placeholder="Enter Coupon Code">
+                  <hr style="color: white;">
+                    <div class="row" style="border-top: 1px solid rgba(0,0,0,.1); padding: 2vh 0;">
+                        <div class="col text-light">TOTAL PRICE:</div>
+                        <div class="col text-light text-right">0.00 PHP</div>
+                    </div>
+                  <div class="row px-3">
+                    <button type="submit" class="col btn btn-light"><img src="cart.png" height=22px></button>
+                  </form>
+                  </div>
               </div>
             </div>
           </div>
+       </div>
+     </div>
+    </div>
+
+    <div class="modal fade" id="log" data-bs-backdrop="static" tabindex="-1" aria-labelledby="log" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-m">
+        <div class="modal-content">
+          <div class="modal-header p-3">
+            <p class="modal-title fs-5 fw-bold" id="staticBackdropLabel">Login</p>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-5" style="overflow-x: hidden;">
+            <form>
+              <p style="text-align: center; font-weight: 700; font-size: 25px;">Login</p>
+              <hr style="color: black;">
+              <p>Username:</p>
+              <input type="text" class="py-1 ps-3 rounded" style="width: 100%;" placeholder="Enter Username">
+              <hr style="color: black;">
+              <p>Password:</p>
+              <input type="password" class="py-1 ps-3 rounded" style="width: 100%;" placeholder="Enter Password">
+              <hr style="color: black;">
+              <center><button type="submit" class="btn btn-dark mb-3" style="width: 70%;">LOGIN</button></center>
+            </form>
+            <a data-bs-toggle="modal" data-bs-target="#reg"><p class="account-prompt">Don't have an account?</p></a>
+            <a data-bs-toggle="modal" data-bs-target="#forgot"><p class="account-prompt">Forgot Password</p></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="reg" data-bs-backdrop="static" tabindex="-1" aria-labelledby="reg" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-m">
+        <div class="modal-content">
+          <div class="modal-header p-3">
+            <p class="modal-title fs-5 fw-bold" id="staticBackdropLabel">Register</p>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-5" style="overflow-x: hidden;">
+            <form>
+              <p style="text-align: center; font-weight: 700; font-size: 25px;">Register Account</p>
+              <hr style="color: black;">
+              <p>Enter Email:</p>
+              <input class="py-1 ps-3 rounded" style="width: 100%;" type="email" placeholder="Enter Email">
+              <hr style="color: black;">
+              <p>Enter Password:</p>
+              <input type="password" class="py-1 ps-3 rounded" style="width: 100%;" placeholder="Enter Password">
+              <hr style="color: black;">
+              <center><button type="submit" class="btn btn-dark mb-3" style="width: 70%;">REGISTER</button></center>
+            </form>
+            <a data-bs-toggle="modal" data-bs-target="#log"><p class="account-prompt">Already have an account?</p></a>
+            <a data-bs-toggle="modal" data-bs-target="#forgot"><p class="account-prompt">Forgot Password</p></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="forgot" data-bs-backdrop="static" tabindex="-1" aria-labelledby="forgot" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-m">
+        <div class="modal-content">
+          <div class="modal-header p-3">
+            <p class="modal-title fs-5 fw-bold" id="staticBackdropLabel">Forgot Password</p>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-5" style="overflow-x: hidden;">
+            <form>
+              <p style="text-align: center; font-weight: 700; font-size: 25px;">Recover Account</p>
+              <hr style="color: black;">
+              <p>Enter Registered Email:</p>
+              <input class="py-1 ps-3 rounded" style="width: 100%;" type="email" placeholder="Enter Email">
+              <hr style="color: black;">
+              <center><button type="submit" class="btn btn-dark mb-3" style="width: 70%;">SUBMIT</button></center>
+            </form>
+            <a data-bs-toggle="modal" data-bs-target="#log"><p class="account-prompt">Back to Login</p></a>
+          </div>
+        </div>
+      </div>
+    </div>
       
       
           <div class="text-end">

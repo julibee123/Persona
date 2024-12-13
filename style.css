@@ -90,15 +90,11 @@ img[src="logo.png"] {
 }
 
 .product-rows-overflow::-webkit-scrollbar-thumb {
-  background-color: rgb(219, 219, 219);
+  background-color: rgb(122, 122, 122);
 }
 
 .product-rows-overflow::-webkit-scrollbar-button:single-button {
   background-color: rgb(0, 0, 0);
-
-  display: block;
-  background-size: 10px;
-  background-repeat: no-repeat;
 }
 
 
