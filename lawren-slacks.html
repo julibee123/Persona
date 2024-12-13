@@ -1,0 +1,642 @@
+<!doctype html>
+<html lang="en" style="scrollbar-width: none;">
+
+<head>
+    <title>Persona</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+      #lawren-slacks {
+        height: 600px;
+        width: 500px;
+        border: 2px solid gray;
+        background-image: url(pants1.png); 
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg fixed-top" style="background-color: lightgrey;">
+          <div class="container-fluid">
+            <!-- logo needed here -->
+            <a class="navbar-brand fw-bold" href="index.html"><img class="d-inline-block align-top" src="logo.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="product.html">Collection +</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html#product">About Us +</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    </form>
+                    <!-- little icons can go here -->
+                    <button class="btn" type="submit"><img class="d-inline-block align-bottom" src="search.png" height=20px></button>
+                    <a data-bs-toggle="modal" data-bs-target="#cart"><button class="btn"><img class="d-inline-block align-bottom" src="cart.png" height=18px></button></a>
+                    <a data-bs-toggle="modal" data-bs-target="#log"><button class="btn"><img class="d-inline-block align-bottom" src="user.png" height=22px></button></a>
+            </div>
+          </div>
+        </nav>
+    </header>
+
+        <main>
+            <div class="container my-5 py-5 item-container">
+              <div id="lawren-slacks"></div>
+              <div class="item-details ps-2">
+                <p class="m-0" style="font-size: 45px; line-height: 1em;">Lawren Slacks</p>
+                <p style="font-size: 27px;">6700.00 PHP</p>
+                <p class="mt-4 mb-2" style="font-size: 18px;"> Sizes </p>
+                <div class="item-size-options">
+                  <span>XXS</span>
+                  <span>XS</span>
+                  <span>S</span>
+                  <span>M</span>
+                  <span>L</span>
+                  <span>XL</span>
+                  <span>XXL</span>
+                </div>
+                <div class="mt-4 mb-1"><span id="size-guide" type="button" data-bs-toggle="offcanvas" data-bs-target="#sizeguideoffcanvas" aria-controls="sizeguideoffcanvas"> Size Guide</span></div>
+                <div class="add-button">Add</div>
+              </div>
+            </div>
+
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="sizeguideoffcanvas" aria-labelledby="sizeguideoffcanvasLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="sizeguideoffcanvasLabel">Size Guide</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body" style="display: flex; align-items: center;">
+                <table class="table table-striped-columns">
+                  <thead>
+                    <tr>
+                      <th scope="col">Size</th>
+                      <th scope="col">Bust</th>
+                      <th scope="col">Waist</th>
+                      <th scope="col">Hips</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">XXS</th>
+                      <td>78</td>
+                      <td>63</td>
+                      <td>82</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">XS</th>
+                      <td>81-84</td>
+                      <td>61-64</td>
+                      <td>89-91</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">S</th>
+                      <td>86-89</td>
+                      <td>66-69</td>
+                      <td>94-97</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">M</th>
+                      <td>91-94</td>
+                      <td>71-74</td>
+                      <td>99-102</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">L</th>
+                      <td>98-102</td>
+                      <td>77-81</td>
+                      <td>105-109</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">XL</th>
+                      <td>105</td>
+                      <td>85</td>
+                      <td>113</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">XXL</th>
+                      <td>112-116</td>
+                      <td>94-98</td>
+                      <td>119-123</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+        </main>
+
+        <footer class="py-4 pe-2">
+          <div class="row">
+            <h5>Customer Service</h5>
+            <ul>
+              <li><span><a data-bs-toggle="modal" data-bs-target="#notice">Notice</a></span></li>
+              <li><span><a data-bs-toggle="modal" data-bs-target="#guide">Guide</a></span></li>
+              <li><span><a data-bs-toggle="modal" data-bs-target="#terms-of-use">Terms of Use</a></span></li>
+              <li><span><a data-bs-toggle="modal" data-bs-target="#privacy-policy">Privacy Policy</a></span></li>
+            </ul>
+          </div>
+      
+          <div class="modal fade" id="notice" data-bs-backdrop="static" tabindex="-1" aria-labelledby="notice"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-fullscreen">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">Notice</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <table class="table table-hover">
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Free Shipping on Orders ₱10000+ </td>
+                        <td>
+                          <p>
+                            Orders will be shipped free from the total amount of ₱10000 and above.<br>
+      
+                            - It will be automatically applied during checkout page.<br>
+      
+                            - Please log on to your account before placing a order to receive the free shipping and mileage
+                            benefit.<br>
+      
+                            - Orders will be shipped with FedEx, worldwide.
+                          </p>
+                        </td>
+                        <td>12-12-2024</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Return & Exchange</td>
+                        <td>
+                          <p>
+                            REQUIREMENTS
+                          </p>
+                          <br>
+      
+                          <p>
+                            PLEASE NOTE THE FOLLOWING REQUIREMENTS TO BE ELIGIBLE FOR RETURN & EXCHANGE<br>
+      
+                            RETURNED PRODUCTS THAT DO NOT MEET OUR REQUIREMENTS WILL BE SENT BACK TO THE CUSTOMER<br>
+      
+                            - A return or exchange must be requested within 7 days from the delivered date.<br>
+                            - Products must be returned to us unused with the original tags still attached.<br>
+                            - Products must be not damaged including packages, labels, dust bags and boxes.<br>
+                            - Certain products cannot be returned or exchanged due to the nature of their material. (Such as
+                            knitted sweaters, beanie, etc)<br>
+      
+                            INSTRUCTIONS<br>
+      
+                            1. Log on to your account, visit My page - Order history.<br>
+                            2. Choose an order to return or exchange, submit your request.<br>
+                            3. Our customer service team will review your request and will reply back to your email.<br>
+                            4. After receiving our reply and approval, please ship the products within 3 days.<br>
+                            5. You may use a shipping company of your choice, note that your choice of return service will
+                            have an effect on how quickly we receive your order back.<br>
+                            6. Please ship your product to the below address:<br>
+                            PERSONA, Angeles, Pampanga, Philippines,
+                            +63 55-846-6236<br>
+                            7. Once we receive your returned products, we will inspect and your order status will be
+                            update.<br>
+                            8. For returns and exchanges to be processed, customers must cover any tax and duty incurred from
+                            receiving the product.<br>
+                            Otherwise, such costs will be deducted from the total refundable amount.<br>
+      
+                            In case you need any other assistance, please leave a 1:1 inquiry through My Page or send an email
+                            to customer_care@persona.com.<br>
+                          </p>
+                        </td>
+                        <td>12-10-2024</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Mileage notification</td>
+                        <td>
+                          <p>Hello. This is PERSONA.<br>
+      
+                            Thank you for being our valued customer.<br>
+      
+                            According to our policy, mileage rate for a purchase will be increased from 31st December
+                            2024.<br>
+      
+                            Effective date: 12/31/2024<br>
+                            Before: 0.5% of total purchase amount<br>
+                            After: 2% of total purchase amount<br>
+      
+                            We appreciate your consideration.<br>
+      
+                            CS Center: customer_care@persona.com
+                          </p>
+                        </td>
+                        <td>12-01-2024</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="modal fade" id="guide" data-bs-backdrop="static" tabindex="-1" aria-labelledby="guide"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-fullscreen">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">Guide</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p class="text-start">
+                    How to order<br>
+                    Order is processed as below:<br>
+                    <br>
+                    Step 1: Search for products.<br>
+                    Step 2: Add products to your shopping cart.<br>
+                    Step 3: Log in with a member ID or non-member order.<br>
+                    Step 4: Fill in the order form.<br>
+                    Step 5: Proceed with payment and apply vouchers(if applicable).<br>
+                    Step 6: Complete the order and you will see the order number.<br>
+                    <br>
+                    Payment<br>
+      
+                    1. Payment with credit/debit card (VISA, MASTER, JCB, AMEX etc.) via PAYPAL – with registered Paypal
+                    account or without a paypal account<br>
+                    2. Payment with credit card (Visa, Master, JCB, Amex, and etc.) - verified by 3D secure accepted<br>
+                    <br>
+                    Shipping<br>
+                    Shippping Method : Parcel Service<br>
+                    Shipping Area: Shipping worldwide with FedEx<br>
+                    Shipping Rate: Overseas shipment fee will be charged differently depending on the ordered products’
+                    weight.<br>
+                    Shipping method: FedEx<br>
+                    Delivery time: 7-10 business days from payment (Same day shipping is not available)<br>
+                    Please take into consideration that some products may take additional time for delivery and processing<br>
+                    Important: Your order is shipped once your payment has been cleared. Please contact our customer service
+                    center (customer_care@persona.com) with your order number if you would like to request an exchange or
+                    return on your order.<br>
+                    <br>
+                    Shipping costs:<br>
+                    1. FedEx rates (automatically calculated)<br>
+                    <br>
+                    Customs and Duties<br>
+                    <br>
+                    The recipient will be held responsible for international shipments which may be subject to import duties
+                    and taxes. Please be advised that these charges are levied by the destination country and we do not have
+                    control over them. In the case that the recipient refuses to receive the parcel, the order will be
+                    returned to the Philippines and will not be re-shipped. Relevant expenses (round-trip shipping, customs,
+                    etc.)
+                    will be deducted from the refund.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="modal fade" id="guide" data-bs-backdrop="static" tabindex="-1" aria-labelledby="guide"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-fullscreen">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">Guide</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    How to order<br>
+                    Order is processed as below:<br>
+                    <br>
+                    Step 1: Search for products.<br>
+                    Step 2: Add products to your shopping cart.<br>
+                    Step 3: Log in with a member ID or non-member order.<br>
+                    Step 4: Fill in the order form.<br>
+                    Step 5: Proceed with payment and apply vouchers(if applicable).<br>
+                    Step 6: Complete the order and you will see the order number.<br>
+                    <br>
+                    Payment<br>
+      
+                    1. Payment with credit/debit card (VISA, MASTER, JCB, AMEX etc.) via PAYPAL – with registered Paypal
+                    account or without a paypal account<br>
+                    2. Payment with credit card (Visa, Master, JCB, Amex, and etc.) - verified by 3D secure accepted<br>
+                    <br>
+                    Shipping<br>
+                    Shippping Method : Parcel Service<br>
+                    Shipping Area: Shipping worldwide with FedEx<br>
+                    Shipping Rate: Overseas shipment fee will be charged differently depending on the ordered products’
+                    weight.<br>
+                    Shipping method: FedEx<br>
+                    Delivery time: 7-10 business days from payment (Same day shipping is not available)<br>
+                    Please take into consideration that some products may take additional time for delivery and processing<br>
+                    Important: Your order is shipped once your payment has been cleared. Please contact our customer service
+                    center (customer_care@persona.com) with your order number if you would like to request an exchange or
+                    return on your order.<br>
+                    <br>
+                    Shipping costs:<br>
+                    1. FedEx rates (automatically calculated)<br>
+                    <br>
+                    Customs and Duties<br>
+                    <br>
+                    The recipient will be held responsible for international shipments which may be subject to import duties
+                    and taxes. Please be advised that these charges are levied by the destination country and we do not have
+                    control over them. In the case that the recipient refuses to receive the parcel, the order will be
+                    returned to South Korea and will not be re-shipped. Relevant expenses (round-trip shipping, customs, etc.)
+                    will be deducted from the refund.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="modal fade" id="terms-of-use" data-bs-backdrop="static" tabindex="-1" aria-labelledby="terms-of-use"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-fullscreen">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">Guide</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    Terms of Use<br>
+                    Welcome to PERSONA. By accessing or using our website (the “Site”), you agree to be bound by the following
+                    terms and conditions (the “Terms of Use”). If you do not agree with these terms, you may not use the
+                    Site.<br>
+                    <br>
+                    1. General<br>
+                    1.1. These Terms of Use govern your use of the Site and all services provided by PERSONA, including
+                    browsing, purchasing products, and interacting with the content and features available on the Site.<br>
+                    1.2. By using the Site, you confirm that you are at least 18 years old or have obtained the consent of a
+                    parent or guardian to use the Site.<br>
+                    1.3. PERSONA reserves the right to modify these Terms of Use at any time. Updates will be posted on this
+                    page, and your continued use of the Site constitutes acceptance of the updated Terms.<br>
+                    <br>
+                    2. User Accounts<br>
+                    2.1. To access certain features of the Site, you may be required to create an account. You agree to
+                    provide accurate and complete information during registration and to keep your account details up to
+                    date.<br>
+                    2.2. You are responsible for maintaining the confidentiality of your account credentials and for all
+                    activities that occur under your account.<br>
+                    2.3. PERSONA reserves the right to suspend or terminate your account at its sole discretion if any
+                    activity violates these Terms of Use or applicable laws.<br>
+                    <br>
+                    3. Products and Pricing<br>
+                    3.1. All products listed on the Site are subject to availability. PERSONA reserves the right to modify,
+                    discontinue, or update products and prices without prior notice.<br>
+                    3.2. Prices displayed on the Site are in [currency, e.g., USD] and do not include applicable taxes,
+                    shipping, or other fees unless explicitly stated.<br>
+                    3.3. In the event of a pricing or typographical error, PERSONA reserves the right to cancel orders placed
+                    for incorrectly priced items.<br>
+                    <br>
+                    4. Payment and Orders<br>
+                    4.1. Payments must be made through the payment methods provided on the Site. By submitting payment
+                    information, you confirm that you are authorized to use the selected payment method.<br>
+                    4.2. Once an order is placed, you will receive a confirmation email. This does not constitute acceptance
+                    of the order; PERSONA reserves the right to cancel or refuse any order for any reason, including suspected
+                    fraud or inventory issues.<br>
+                    <br>
+                    5. Shipping and Returns<br>
+                    5.1. Shipping times and costs will vary based on your location and the selected shipping method. Estimated
+                    delivery times are not guaranteed.<br>
+                    5.2. PERSONA’s return policy is outlined on the “Returns” page of the Site. By purchasing from PERSONA,
+                    you agree to the terms of this policy.<br>
+                    <br>
+                    6. Intellectual Property<br>
+                    6.1. All content on the Site, including but not limited to text, images, logos, and graphics, is the
+                    property of PERSONA or its licensors and is protected by intellectual property laws.<br>
+                    6.2. You may not copy, distribute, reproduce, or modify any content from the Site without express written
+                    permission from PERSONA.<br>
+                    <br>
+                    7. User Conduct<br>
+                    7.1. You agree not to:<br>
+                    Use the Site for any unlawful purpose.<br>
+                    Upload or transmit harmful or malicious content.<br>
+                    Interfere with the operation of the Site or its security features.<br>
+                    Attempt to access restricted areas of the Site or other users’ accounts.<br>
+                    <br>
+                    8. Limitation of Liability<br>
+                    8.1. PERSONA is not liable for any direct, indirect, incidental, or consequential damages arising from
+                    your use of the Site or the purchase of products, except where required by law.<br>
+                    8.2. The Site and its content are provided “as is” without warranties of any kind, either express or
+                    implied, including but not limited to fitness for a particular purpose.<br>
+                    <br>
+                    9. Governing Law<br>
+                    9.1. These Terms of Use are governed by the laws of [Jurisdiction, e.g., the State of California], without
+                    regard to its conflict of law principles.<br>
+                    9.2. Any disputes arising from these Terms or your use of the Site will be resolved exclusively in the
+                    courts of [Jurisdiction].<br>
+                    <br>
+                    10. Contact Information<br>
+                    If you have any questions or concerns regarding these Terms of Use, please contact us at:<br>
+                    <br>
+                    PERSONA<br>
+                    Email: customer_care@persona.com<br>
+                    Phone: +63 55-846-6236<br>
+                    Address: Angeles City, Pampanga, Philippines
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="modal fade" id="privacy-policy" data-bs-backdrop="static" tabindex="-1" aria-labelledby="privacy-policy"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-fullscreen">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">Guide</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    PRIVACY POLICY<br>
+                    Welcome to PERSONA, a leading online fashion retailer based in the Philippines. At PERSONA, we are
+                    committed to protecting your personal information and ensuring your privacy while providing an exceptional
+                    online shopping experience.<br>
+                    <br>
+                    1. Information We Collect<br>
+                    1.1 Personal Information<br>
+                    We collect personal information that you voluntarily provide to us, including:<br>
+                    Full name<br>
+                    Email address<br>
+                    Shipping and billing addresses<br>
+                    Phone number<br>
+                    Payment information<br>
+                    Account login credentials<br>
+                    1.2 Non-Personal Information<br>
+                    We also collect non-personal information such as:<br>
+                    Browser type<br>
+                    Device information<br>
+                    IP address<br>
+                    Browsing behavior<br>
+                    Cookies and tracking technologies<br>
+                    <br>
+                    2. How We Use Your Information<br>
+                    PERSONA uses your personal information for the following purposes:<br>
+                    Processing and fulfilling your orders<br>
+                    Providing customer support<br>
+                    Personalizing your shopping experience<br>
+                    Sending promotional offers and marketing communications<br>
+                    Improving our website and services<br>
+                    Fraud prevention and security monitoring<br>
+                    <br>
+                    3. Data Sharing and Disclosure<br>
+                    We may share your information with:<br>
+                    Third-party service providers (payment processors, shipping companies)<br>
+                    Legal authorities when required by law<br>
+                    Business partners for marketing purposes (with your consent)<br>
+                    <br>
+                    4. Data Security<br>
+                    We implement robust security measures to protect your personal information, including:<br>
+                    Encryption of sensitive data<br>
+                    Secure payment gateways<br>
+                    Regular security audits<br>
+                    Access controls and authentication protocols<br>
+                    <br>
+                    5. Your Rights<br>
+                    Under Philippine Data Privacy Act (Republic Act No. 10173), you have the right to:<br>
+                    Access your personal information<br>
+                    Request correction of inaccurate data<br>
+                    Object to processing of your data<br>
+                    Request data portability<br>
+                    Withdraw consent for data processing<br>
+                    <br>
+                    6. Cookies and Tracking<br>
+                    PERSONA uses cookies to enhance user experience, analyze website traffic, and provide personalized
+                    content. You can manage cookie preferences through your browser settings.<br>
+                    <br>
+                    7. Third-Party Links<br>
+                    Our website may contain links to external sites. We are not responsible for the privacy practices of these
+                    third-party websites.<br>
+                    <br>
+                    8. Updates to Privacy Policy<br>
+                    We may update this privacy policy periodically. We will notify you of significant changes via email or
+                    website notification.<br>
+                    <br>
+                    9. Contact Information<br>
+                    For any privacy-related inquiries, please contact:<br>
+                    PERSONA<br>
+                    Email: customer_care@persona.com<br>
+                    Phone: +63 55-846-6236<br>
+                    Address: Angeles City, Pampanga, Philippines<br>
+                    <br>
+                    10. Compliance<br>
+                    This privacy policy is compliant with the Data Privacy Act of 2012 (Republic Act No. 10173) of the
+                    Philippines and international data protection standards.<br>
+                    Last Updated: 12-12-2024<br>
+                    <br>
+                    © 2024 PERSONA. All Rights Reserved.<br>
+                    Disclaimer: This is a template privacy policy. We recommend consulting with a legal professional to ensure
+                    full compliance with Philippine data protection laws and your specific business requirements.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="modal fade" id="cart" data-bs-backdrop="static" tabindex="-1" aria-labelledby="cart" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-lg">
+              <div class="modal-content">
+                <div class="modal-header p-4 pe-5 row">
+                    <div class="col text-start"><h4>SHOPPING CART</h4></div>
+                    <div class="col align-self-center text-start text-muted fs-6">0 ITEMS</div>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0" style="overflow-x: hidden;">
+                  <div class="row">
+                    <div class="col-7 align-self-center text-muted fs-2" style="text-align: center;">NO ITEMS IN CART</div>
+      
+                    <div class="col-5 bg-dark p-5">
+                      <div class="row">
+                        <div class="col-6 text-light fs-5 align-self-center">SUMMARY</div>
+                        <div class="col-6 text-light align-self-center" style="text-align: right;">ITEMS: 0</div>
+                      </div>
+                        <form>
+                            <hr style="color: white;">
+                            <p class="text-light">SHIPPING</p>
+                              <select class="py-1 ps-3 rounded" style="width: 100%;">
+                                <option class="text-muted">Same-Day Shipping</option>
+                                <option class="text-muted">Regular Shipping</option>
+                              </select>
+                            <hr style="color: white;">
+                            <p class="text-light">COUPON CODE</p>
+                            <input class="py-1 ps-3 rounded" style="width: 100%;" placeholder="Enter Coupon Code">
+                        </form>
+                        <hr style="color: white;">
+                          <div class="row" style="border-top: 1px solid rgba(0,0,0,.1); padding: 2vh 0;">
+                              <div class="col text-light">TOTAL PRICE:</div>
+                              <div class="col text-light text-right">0.00 PHP</div>
+                          </div>
+                        <button class="btn btn-light">CHECKOUT</button>
+                    </div>
+                  </div>
+                </div>
+             </div>
+           </div>
+          </div>
+      
+          <div class="modal fade" id="log" data-bs-backdrop="static" tabindex="-1" aria-labelledby="log" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-m">
+              <div class="modal-content">
+                <div class="modal-header p-3">
+                  <p class="modal-title fs-5 fw-bold" id="staticBackdropLabel">Login/Register</p>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-5" style="overflow-x: hidden;">
+                  <p style="text-align: center; font-weight: 700; font-size: 25px;">Login</p>
+                  <hr style="color: black;">
+                  <p>Username:</p>
+                  <input class="py-1 ps-3 rounded" style="width: 100%;" placeholder="Enter Username">
+                  <hr style="color: black;">
+                  <p>Password:</p>
+                  <input class="py-1 ps-3 rounded" style="width: 100%;" placeholder="Enter Password">
+                  <hr style="color: black;">
+                  <center><button class="btn btn-dark mb-3" style="width: 70%;">NEXT</button></center>
+                  <p class="account-prompt">Don't have an account?</p>
+                  <p class="account-prompt">Forgot Password</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+      
+          <div class="text-end">
+            <h5>Social Media</h5>
+            <div>
+              <button class="social-icons"><img class="d-inline-block m-0" src="call.png" height=20 px width=20 px></button>
+              <button class="social-icons"><img class="d-inline-block m-0" src="facebook.png" height=20 px width=20px></button>
+              <button class="social-icons"><img class="d-inline-block m-0" src="instagram.png" height=20 px width=20px></button>
+              <button class="social-icons"><img class="d-inline-block m-0" src="twitter.png" height=20 px width=20px></button>
+              <button class="social-icons"><img class="d-inline-block" src="youtube.png" height=20 px width=20 px></button>
+            </div>
+          </div>
+          </div>
+        </footer>
+
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"></script>
+      
+
+</body>
+
+</html>
