@@ -35,33 +35,36 @@
           </ul>
           <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn" type="submit"><img class="d-inline-block align-bottom" src="search.png" height=20px></button>
+            <button class="btn" type="submit"><img class="d-inline-block align-bottom" src="search.png"
+                height=20px></button>
           </form>
-          <a data-bs-toggle="modal" data-bs-target="#cart"><button class="btn"><img class="d-inline-block align-bottom" src="cart.png" height=18px></button></a>
-          <a data-bs-toggle="modal" data-bs-target="#log"><button class="btn"><img class="d-inline-block align-bottom" src="user.png" height=22px></button></a>
+          <a data-bs-toggle="modal" data-bs-target="#cart"><button class="btn"><img class="d-inline-block align-bottom"
+                src="cart.png" height=18px></button></a>
+          <a data-bs-toggle="modal" data-bs-target="#log"><button class="btn"><img class="d-inline-block align-bottom"
+                src="user.png" height=22px></button></a>
         </div>
       </div>
     </nav>
   </header>
-    <!-- first page -->
-    <section class="container text-center pt-5 mt-5 vh-100 vw-100">
-      <div class="row">
-        <div class="col-md-4 d-none d-md-block bg-image mainpics" id="human1">
-        </div>
-        <div class="col-md-4 d-none d-md-block bg-image mainpics" id="human2">
-        </div>
-        <div class="col-md-4 d-none d-md-block bg-image mainpics" id="human3">
-        </div>
-        <div class ="col-12 mainpics" id="soloMain"></div>
+  <!-- first page -->
+  <section class="container text-center pt-5 mt-5 vh-100 vw-100">
+    <div class="row">
+      <div class="col-md-4 d-none d-md-block bg-image mainpics" id="human1">
       </div>
-      <div class="mt-3">
-        <!--make font-weight higher, around 700 and italize-->
-        <h2>"Debate & Co." Line</h2>
-        <a href="product.html" class="btn btn-dark mt-1">Shop Now</a>
+      <div class="col-md-4 d-none d-md-block bg-image mainpics" id="human2">
       </div>
-    </section>
+      <div class="col-md-4 d-none d-md-block bg-image mainpics" id="human3">
+      </div>
+      <div class="col-12 mainpics" id="soloMain"></div>
+    </div>
+    <div class="mt-3">
+      <!--make font-weight higher, around 700 and italize-->
+      <h2>"Debate & Co." Line</h2>
+      <a href="product.html" class="btn btn-dark mt-1">Shop Now</a>
+    </div>
+  </section>
 
-    <section class="container-fluid px-0">
+  <section class="container-fluid px-0">
     <a name="product">
       <div class="webpage" id="product"></div>
     </a>
@@ -70,16 +73,28 @@
   <selection class="container-fluid">
     <div class="content-section mt-0">
       <div class="content-column vh-105">
-        <a href="product.html"><h2>Accessories</h2></a>
-        <a href="tenit-muffler.html"><div class="content-image" id="tenit-muffler"></div></a>
+        <a href="product.html">
+          <h2>Accessories</h2>
+        </a>
+        <a href="tenit-muffler.html">
+          <div class="content-image" id="tenit-muffler"></div>
+        </a>
       </div>
       <div class="content-column vh-105">
-        <a href="product.html"><h2>Clothing</h2></a>
-        <a href="bant-jumper.html"><div class="content-image" id="bant-jumper"></div></a>
+        <a href="product.html">
+          <h2>Clothing</h2>
+        </a>
+        <a href="bant-jumper.html">
+          <div class="content-image" id="bant-jumper"></div>
+        </a>
       </div>
       <div class="content-column vh-105">
-        <a href="product.html"><h2>Shoes</h2></a>
-        <a href="paneled-sneakers.html"><div class="content-image" id="paneled-sneakers"></div></a>
+        <a href="product.html">
+          <h2>Shoes</h2>
+        </a>
+        <a href="paneled-sneakers.html">
+          <div class="content-image" id="paneled-sneakers"></div>
+        </a>
       </div>
     </div>
   </selection>
@@ -492,11 +507,13 @@
     </div>
 
     <div class="modal fade" id="cart" data-bs-backdrop="static" tabindex="-1" aria-labelledby="cart" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-scrollable modal-lg">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
         <div class="modal-content">
           <div class="modal-header p-4 pe-5 row">
-              <div class="col text-start"><h4>SHOPPING CART</h4></div>
-              <div class="col align-self-center text-start text-muted fs-6">0 ITEMS</div>
+            <div class="col text-start">
+              <h4>SHOPPING CART</h4>
+            </div>
+            <div class="col align-self-center text-start text-muted fs-6">0 ITEMS</div>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body p-0" style="overflow-x: hidden;">
@@ -508,34 +525,34 @@
                   <div class="col text-light fs-5 align-self-center">SUMMARY</div>
                   <div class="col text-light align-self-center">ITEMS: 0</div>
                 </div>
-                  <form>
-                      <hr style="color: white;">
-                      <p class="text-light">SHIPPING</p>
-                        <select class="py-1 ps-3 rounded" style="width: 100%;">
-                          <option class="text-muted">Same-Day Shipping</option>
-                          <option class="text-muted">Regular Shipping</option>
-                        </select>
-                      <hr style="color: white;">
-                      <p class="text-light">COUPON CODE</p>
-                      <input type="text" class="py-1 ps-3 rounded" style="width: 100%;" placeholder="Enter Coupon Code">
+                <form>
                   <hr style="color: white;">
-                    <div class="row" style="border-top: 1px solid rgba(0,0,0,.1); padding: 2vh 0;">
-                        <div class="col text-light">TOTAL PRICE:</div>
-                        <div class="col text-light text-right">0.00 PHP</div>
-                    </div>
-                  <div class="row px-3">
-                    <button type="submit" class="col btn btn-light"><img src="cart.png" height=22px></button>
-                  </form>
+                  <p class="text-light">SHIPPING</p>
+                  <select class="py-1 ps-3 rounded" style="width: 100%;">
+                    <option class="text-muted">Same-Day Shipping</option>
+                    <option class="text-muted">Regular Shipping</option>
+                  </select>
+                  <hr style="color: white;">
+                  <p class="text-light">COUPON CODE</p>
+                  <input type="text" class="py-1 ps-3 rounded" style="width: 100%;" placeholder="Enter Coupon Code">
+                  <hr style="color: white;">
+                  <div class="row" style="border-top: 1px solid rgba(0,0,0,.1); padding: 2vh 0;">
+                    <div class="col text-light">TOTAL PRICE:</div>
+                    <div class="col text-light text-right">0.00 PHP</div>
                   </div>
+                  <div class="row px-3">
+                    <button type="submit" class="col btn btn-light"><img src="cart.png" height=15px></button>
+                </form>
               </div>
             </div>
           </div>
-       </div>
-     </div>
+        </div>
+      </div>
+    </div>
     </div>
 
     <div class="modal fade" id="log" data-bs-backdrop="static" tabindex="-1" aria-labelledby="log" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-scrollable modal-m">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-m">
         <div class="modal-content">
           <div class="modal-header p-3">
             <p class="modal-title fs-5 fw-bold" id="staticBackdropLabel">Login</p>
@@ -553,15 +570,19 @@
               <hr style="color: black;">
               <center><button type="submit" class="btn btn-dark mb-3" style="width: 70%;">LOGIN</button></center>
             </form>
-            <a data-bs-toggle="modal" data-bs-target="#reg"><p class="account-prompt">Don't have an account?</p></a>
-            <a data-bs-toggle="modal" data-bs-target="#forgot"><p class="account-prompt">Forgot Password</p></a>
+            <a data-bs-toggle="modal" data-bs-target="#reg">
+              <p class="account-prompt">Don't have an account?</p>
+            </a>
+            <a data-bs-toggle="modal" data-bs-target="#forgot">
+              <p class="account-prompt">Forgot Password</p>
+            </a>
           </div>
         </div>
       </div>
     </div>
 
     <div class="modal fade" id="reg" data-bs-backdrop="static" tabindex="-1" aria-labelledby="reg" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-scrollable modal-m">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-m">
         <div class="modal-content">
           <div class="modal-header p-3">
             <p class="modal-title fs-5 fw-bold" id="staticBackdropLabel">Register</p>
@@ -579,15 +600,20 @@
               <hr style="color: black;">
               <center><button type="submit" class="btn btn-dark mb-3" style="width: 70%;">REGISTER</button></center>
             </form>
-            <a data-bs-toggle="modal" data-bs-target="#log"><p class="account-prompt">Already have an account?</p></a>
-            <a data-bs-toggle="modal" data-bs-target="#forgot"><p class="account-prompt">Forgot Password</p></a>
+            <a data-bs-toggle="modal" data-bs-target="#log">
+              <p class="account-prompt">Already have an account?</p>
+            </a>
+            <a data-bs-toggle="modal" data-bs-target="#forgot">
+              <p class="account-prompt">Forgot Password</p>
+            </a>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="modal fade" id="forgot" data-bs-backdrop="static" tabindex="-1" aria-labelledby="forgot" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-scrollable modal-m">
+    <div class="modal fade" id="forgot" data-bs-backdrop="static" tabindex="-1" aria-labelledby="forgot"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-m">
         <div class="modal-content">
           <div class="modal-header p-3">
             <p class="modal-title fs-5 fw-bold" id="staticBackdropLabel">Forgot Password</p>
@@ -602,7 +628,9 @@
               <hr style="color: black;">
               <center><button type="submit" class="btn btn-dark mb-3" style="width: 70%;">SUBMIT</button></center>
             </form>
-            <a data-bs-toggle="modal" data-bs-target="#log"><p class="account-prompt">Back to Login</p></a>
+            <a data-bs-toggle="modal" data-bs-target="#log">
+              <p class="account-prompt">Back to Login</p>
+            </a>
           </div>
         </div>
       </div>
@@ -612,11 +640,16 @@
     <div class="text-end">
       <h5>Social Media</h5>
       <div>
-        <button class="social-icons"><img class="d-inline-block m-0" src="call.png" height=20 px width=20 px></button>
-        <button class="social-icons"><img class="d-inline-block m-0" src="facebook.png" height=20 px width=20px></button>
-        <button class="social-icons"><img class="d-inline-block m-0" src="instagram.png" height=20 px width=20px></button>
-        <button class="social-icons"><img class="d-inline-block m-0" src="twitter.png" height=20 px width=20px></button>
-        <button class="social-icons"><img class="d-inline-block" src="youtube.png" height=20 px width=20 px></button>
+        <a href="tel:09558466236"><button class="social-icons"><img class="d-inline-block m-0" src="call.png" height=20
+              px width=20 px></button></a>
+        <a href="https://www.facebook.com"><button class="social-icons"><img class="d-inline-block m-0"
+              src="facebook.png" height=20 px width=20px></button></a>
+        <a href="https://www.instagram.com"><button class="social-icons"><img class="d-inline-block m-0"
+              src="instagram.png" height=20 px width=20px></button></a>
+        <a href="https://www.twitter.com"><button class="social-icons"><img class="d-inline-block m-0" src="twitter.png"
+              height=20 px width=20px></button></a>
+        <a href="https://www.youtube.com"><button class="social-icons"><img class="d-inline-block" src="youtube.png"
+              height=20 px width=20 px></button></a>
       </div>
     </div>
     </div>
