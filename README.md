@@ -10,7 +10,7 @@
   <br>
   <h1>Members</h1>
   <ul>
-    <li>Jahangeer, Ahmed Shahzad D</li>
+    <li>Jahangeer, Ahmed Shahzad D.</li>
     <li>Manalo, Jullian C.</li>
     <li>Timbol, Erin Venize P.</li>
   </ul>
